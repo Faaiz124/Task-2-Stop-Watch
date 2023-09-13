@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00bfff;
+    font-family: 'roboto', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 40%;
+    /* min-width: 500px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.timerDisplay {
+    position: relative;
+    width: 92%;
+    background-color: #fff;
+    padding: 40px 0px;
+    color: #000;
+    font-size: 40px;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 139, 253, 0.25)
+}
+
+.btn {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn button {
+    width: 120px;
+    height: 45px;
+    background-color: #205e94;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+
+.btn button:nth-last-child(2) {
+    background-color: #d23332
+}
+
+.btn button:nth-last-child(1) {
+    background-color: #20b380
+}
+
+@media screen and (max-width: 745px) {
+    .container {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .btn button {
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .container {
+        width: 60%;
+    }
+    .btn button {
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .timerDisplay {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 5px;
+    }
+    .btn button {
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
